@@ -1,0 +1,4 @@
+# Lier le runtime C de Microsoft dans l'exécutable :
+# pas besoin du Visual C++ Redistributable sur le PC cible.
+[target.x86_64-pc-windows-msvc]
+rustflags = ["-C", "target-feature=+crt-static"]
